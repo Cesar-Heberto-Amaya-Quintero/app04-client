@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="titulo">Taquería el taquero</h1>
+    <div id="menucss">
+        <h2 class="menu">Menú</h2>
+        <div id="tacos-container"></div>
+    </div>
+    
+
+    <br>
+
+    
+    <div id="taco-formcss">
+        <h2>Agregar taco</h2>
+        <div>
+            Nombre del taco: <input type="text" name="" id="taco-name"/>
+        </div>
+        <br>
+        <div>
+            Cantidad: <input type="number" name="" id="taco-quantity"/>
+        </div>
+        <br>
+        <div>
+            ¿Es picante? (Si/No): <label for="option-pica"></label>
+            <select name="option-pica" id="option-pica">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <br>
+        <button id= "btn-post-taco">Crear taco</button>
+    </div>
+
+    <br>
+    
+    <div id="taco-formcss">
+        <h2>Actualizar taco</h2>
+        Nombre del taco: <label for="taco-option"></label>
+            <select name="taco-option" id="taco-option"> </select>
+            <div id="taco-form">
+                <br>
+                <div>
+                    Nuevo nombre del taco: <input type="text" name="" id="taco-name-update"/>
+                </div>
+                <br>
+                <div>
+                    Cantidad: <input type="number" name="" id="taco-quantity-update"/>
+                </div>
+                <br>
+                <div>
+                    ¿Es picante? (Si/No): <label for="option-pica-update"></label>
+                    <select name="option-pica-update" id="option-pica-update">
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <br>
+                <button id= "btn-update-taco">Guardar cambios</button>
+            </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
